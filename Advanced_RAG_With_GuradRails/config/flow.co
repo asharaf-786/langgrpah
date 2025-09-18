@@ -1,0 +1,19 @@
+define flow greeting
+  user said greeting
+  bot greet back
+
+define flow self check output
+  $allowed = execute self_check_output
+
+  if not $allowed
+    bot refuse to respond
+    stop
+  else
+    $answer = execute return_answer(question=$user_message)
+    bot $answer
+
+define bot refuse to respond
+  "I'm sorry, I can't respond to that."
+
+define bot greet back
+  "Hello! How can I help you today?"

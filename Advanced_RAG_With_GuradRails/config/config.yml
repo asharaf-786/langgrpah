@@ -1,0 +1,11 @@
+models:
+  - type: main
+    engine: ollama
+    model: llama3.2:latest
+    max_tokens: 1024
+    base_url: http://localhost:11434
+
+rails:
+  input:
+    flows:
+      - self check input

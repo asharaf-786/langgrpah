@@ -1,0 +1,11 @@
+intents:
+  greeting:
+    examples:
+      - hi
+      - hello
+      - hey
+      - hi there
+      - hello there
+      - good morning
+      - good evening
+
